@@ -1,0 +1,58 @@
+.ui-autocomplete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: default
+    }
+    .ui-state-active {
+    border-color: #e7eaf3;
+    background: #f8fafd;
+    }
+    body.dark-mode .ui-state-active {
+    background-color: #252525;
+    border-color: #323232;
+    }
+    .sticky-top {
+    z-index: 999;
+    }
+    .defi-icon img {
+    max-width: 27px;
+    }
+    .autolink-safari a {
+    pointer-events: none !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    }
+    table.dataTable thead th.sorting:before,
+    table.dataTable thead th.sorting_asc:before,
+    table.dataTable thead th.sorting_desc:before,
+    table.dataTable thead th.sorting:after,
+    table.dataTable thead th.sorting_asc:after,
+    table.dataTable thead th.sorting_desc:after {
+    content: none;
+    }
+    .dataTables_processing {
+    z-index: 100;
+    }
+    .fadeout {
+    position: relative;
+    bottom: 4em;
+    height: 4em;
+    background: -webkit-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+    background-image: -moz-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+    background-image: -o-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+    background-image: linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100% );
+    background-image: -ms-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    } 
+    .popover {
+        min-height: 100px;
+        min-width: 310px;
+        border: none;
+        box-shadow: 0 0.5rem 1.2rem rgba(189,197,209,.7);
+        }
+        .popover-body {
+        padding: 1rem;
+        }
+        .spinner-wrapper__icon{
+        top: 40%
+        }

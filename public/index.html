@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <base href="%PUBLIC_URL%/">
+  <link rel="shortcut icon" href="images/smalllogo.png">
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="chromescan" />
+  <meta name="description"
+    content="chromescan allows you to explore and search the chromescan Chain blockchain for transactions, addresses, tokens, prices and other activities taking place on chromescan Chain (CCC)" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQBT662LK8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-KQBT662LK8', { 'anonymize_ip': true });
+  </script>
+  <script>
+    availableAd = [];
+    gotAd = ["ShowAds             "];
+
+  </script>
+  <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.mine06d.css">
+  <link rel="stylesheet" href="assets/vendor/animate.css/animate.mine06d.css">
+  <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenue06d.css">
+
+  <link rel="stylesheet" href="assets/vendor/select2/dist/css/select2.mine06d.css">
+  <link rel="stylesheet" href="assets/css/theme.mine06d.css">
+  <link rel="stylesheet" href="assets/css/custome06d.css">
+  <script src="assets/vendor/jquery/dist/jquery.mine06d.js"></script>
+  <script type="text/javascript" src="jss/blockiese06d.js"></script>
+  
+  <style>
+    .ui-autocomplete {
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: default
+    }
+
+    .ui-state-active {
+      border-color: #e7eaf3;
+      background: #f8fafd;
+    }
+
+    body.dark-mode .ui-state-active {
+      background-color: #252525;
+      border-color: #323232;
+    }
+
+    .sticky-top {
+      z-index: 999;
+    }
+
+    .defi-icon img {
+      max-width: 27px;
+    }
+
+    .autolink-safari a {
+      pointer-events: none !important;
+      text-decoration: none !important;
+      color: inherit !important;
+    }
+  </style>
+  <style type="text/css">
+    #div-advert {
+      line-height: 1.7
+    }
+
+    @media (max-width: 667px) {
+      #div-advert {
+        min-height: 62px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      #div-advert {
+        padding-bottom: 20px;
+      }
+    }
+  </style>
+  <style>
+    .ui-autocomplete {
+      z-index: 3;
+    }
+  </style>
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Chromescan</title>
+</head>
+
+<body id="body">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <a class="js-go-to u-go-to" href="#" data-position='{"bottom": 20, "right": 15 }' data-type="fixed"
+    data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown">
+    <span class="fa fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <script src="assets/vendor/jquery-ui/jquery-ui.mine06d.js"></script>
+  <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.mine06d.js"></script>
+  <script src="assets/vendor/popper.js/dist/umd/popper.mine06d.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.mine06d.js"></script>
+  <!-- JS Implementing Plugins -->
+  <script src="assets/vendor/hs-megamenu/src/hs.megamenue06d.js"></script>
+  <script src="assets/vendor/malihu-custom-sCCCllbar-plugin/jquery.mCustomSCCCllbar.concat.mine06d.js"></script>
+  <script src="assets/vendor/cubeportfolio/js/jquery.cubeportfolio.mine06d.js"></script>
+  <!-- JS Front -->
+  <script src="assets/js/hs.coree06d.js"></script>
+  <script src="assets/js/components/hs.headere06d.js"></script>
+  <script src="assets/js/components/hs.unfolde06d.js"></script>
+  <script src="assets/js/components/hs.malihu-sCCCllbare06d.js"></script>
+  <script src="assets/js/components/hs.focus-statee06d.js"></script>
+  <script src="assets/js/components/hs.go-toe06d.js"></script>
+  <script src="assets/js/components/hs.cubeportfolioe06d.js"></script>
+  <script src="assets/js/custom/combine-js-bottom2e06d.js"></script>
+  <!-- JS Plugins Init. -->
+  <script>
+    
+
+
+      $(window).on('load', function () {
+
+        // $('.js-mega-menu').HSMegaMenu({
+        //   event: 'hover',
+        //   pageContainer: $('.container'),
+        //   breakpoint: 767.98,
+        //   hideTimeOut: 0
+        // });
+        // myfn_subscribeNewsletter.startFn("#btnSubscribeNewsletter", "#signupSrEmail")
+
+
+      // $(document).on('ready', function () {
+
+      //     $.HSCore.components.HSHeader.init($('#header'));
+
+      //     $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+      //         afterOpen: function () {
+      //             $(this).find('input[type="search"]').focus();
+      //         }
+      //     });
+
+      //     $.HSCore.components.HSMalihuSCCCllBar.init($('.js-sCCCllbar'));
+
+      //     $.HSCore.components.HSFocusState.init();
+
+      //     $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // });
+
+    },);
+  </script>
+
+  <script src="assets/js/custom/web3-utils.min.js"></script>
+  <script src="assets/js/custom/web3-eth.min.js"></script>
+  <script src="assets/js/custom/web3-providers-http.min.js"></script>
+  <script src="assets/highcharts/js/v6/highchartse06d.js"></script>
+  <script type="text/javascript">
+      $(function () {
+          $('#container-1').highcharts({
+              chart: {
+                  spacingTop: 10,
+                  spacingBottom: 0,
+                  spacingLeft: 0,
+                  spacingRight: 10,
+              },
+
+              title: {
+                  text: '',
+                  align: 'left',
+              },
+
+              xAxis: {
+                  title: { text: '' },
+                  lineWidth: 0,
+                  minorTickLength: 0,
+                  tickLength: 0,
+                  labels: {
+                      step: 7,
+                  },
+                  categories: [
+                      'Mar 14','Mar 15','Mar 16','Mar 17','Mar 18','Mar 19','Mar 20','Mar 21','Mar 22','Mar 23','Mar 24','Mar 25','Mar 26','Mar 27','Mar 28',
+                  ]
+              },
+
+              yAxis: {
+                  labels: {
+                      enabled: true
+                  },
+                  gridLineWidth: 0,
+                  title: {
+                      text: null
+                  }
+              },
+
+              legend: {
+                  enabled: false
+              },
+
+              credits: {
+                  enabled: false
+              },
+
+              tooltip: {
+                  formatter: function () {
+                      return '<span style="font-size:10px">' + this.point.friendlydate + '</span><br><table><tr><td style="padding:0">' +
+                          '<span style="color:' + this.series.color + '">Transactions: </a></span><b>' + this.point.formattedValue + '</b><br>' +
+                          
+                          '</td></tr></table>';
+                  }
+              },
+
+              plotOptions: {
+                  series: {
+                      color: '#1e2022',
+                      enableMouseTracking: true,
+                      lineWidth: 1,
+                      shadow: false,
+                      animation: false,
+                      cursor: 'pointer',
+                      states: {
+                          hover: {
+                              lineWidth: 1
+                          }
+                      },
+                      marker: {
+                          radius: 0
+                      },
+                      point: {
+                          events: {
+                              select: function (e) {
+                                  location.href = 'txs?dt=' + this.options.dt;
+                              }
+                          }
+                      }
+                  },
+                  column: {
+                      pointPadding: 0.1,
+                      borderWidth: 0
+                  }
+              },
+
+              series: [{
+                  name: 'Transactions',
+                  type: 'spline',
+                  data: [{y : 94235, dt : '1678752000', formattedValue : '94,235', friendlydate : 'Tuesday, March 14, 2023', price : '$0.07'  },{y : 70900, dt : '1678838400', formattedValue : '70,900', friendlydate : 'Wednesday, March 15, 2023', price : '$0.07'  },{y : 56408, dt : '1678924800', formattedValue : '56,408', friendlydate : 'Thursday, March 16, 2023', price : '$0.07'  },],
+                  allowPointSelect: true,
+                  pointStart: 0
+              }]
+          });
+      });
+  </script>
+</body>
+
+</html>

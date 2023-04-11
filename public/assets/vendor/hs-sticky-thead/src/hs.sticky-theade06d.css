@@ -1,0 +1,23 @@
+/* Original */
+thead.sticky-thead-original-thead tr th,
+thead.sticky-thead-original-thead tr td {
+    border-top: none;
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sticky-thead-original-th-inner-wrapper {
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+/* Cloned */
+.sticky-thead-cloned-wrapper {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 2;
+    overflow-x: hidden;
+}
