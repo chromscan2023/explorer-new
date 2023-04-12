@@ -1,11 +1,14 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import config from '../coreFiles/config';
 import Header from '../directives/header';
 import Footer from '../directives/footer';
+import {getBlocks} from "../services/api.block";
+
 
 const Blocks = () => {
-
+    var page=1;
+    const [fulldata, setfulldata] = useState({data:[],page:page,total:0,foundblocks:0,totalpages:0});
 
     useEffect(() => {
 

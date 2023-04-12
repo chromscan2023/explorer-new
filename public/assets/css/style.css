@@ -56,3 +56,7 @@
         .spinner-wrapper__icon{
         top: 40%
         }
+
+        .validation_alert {
+            color: red;
+        }

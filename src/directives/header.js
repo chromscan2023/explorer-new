@@ -140,7 +140,7 @@ const Header = (props) => {
                                             </div>
                                             <input type="text" className="form-control searchautocomplete" id="txtSearchInput" name="q" placeholder="Search by Address / Txn Hash / Block / Token" aria-label="Search by Address / Txn Hash / Block / Token" aria-describedby="button-header-search" onkeyup="handleSearchText(this);" />
                                             <input type="hidden" defaultValue id="hdnSearchText" />
-                                            <input id="hdnIsTestNet" defaultValue="False" type="hidden" />
+                                            <input id="hdnIsTestNet" value="False" type="hidden" />
                                             <div className="input-group-append">
                                                 <button className="btn btn-primary" type="submit">
                                                     <span className="fas fa-search" />

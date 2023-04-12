@@ -34,7 +34,13 @@ import Unitconverter from './component/unitconverter'
 import Login from './component/login'
 import Forgetpassword from './component/forgetpassword'
 import Register from './component/register'
-
+import Adamantfinance from './component/accounts/label/adamantfinance'
+import Salemfinance from './component/accounts/label/salemfinance'
+import Activeaddress from './component/chart/active-address'
+import Addresschart from './component/chart/addresschart'
+import Blockchart from './component/chart/blockchart'
+import Miner from './component/stat/miner'
+import Dashboard from './component/dashboard'
 
 
 function App() {
@@ -48,7 +54,8 @@ function App() {
           <Route path={`${config.baseUrl}tx`} element={<Tx />} />
           <Route path={`${config.baseUrl}busy`} element={<Busy />} />
           <Route path={`${config.baseUrl}block`} element={<Block />} />
-
+          <Route path={`${config.baseUrl}dashboard`} element={<Dashboard />} />
+          
           <Route path={`${config.baseUrl}txsInternal`} element={<TxsInternal />} />
           <Route path={`${config.baseUrl}address`} element={<Address />} />
           <Route path={`${config.baseUrl}blocks`} element={<Blocks />} />
@@ -74,6 +81,12 @@ function App() {
           <Route path={`${config.baseUrl}login`} element={<Login />} />
           <Route path={`${config.baseUrl}forgetpassword`} element={<Forgetpassword />} />
           <Route path={`${config.baseUrl}register`} element={<Register />} />
+          <Route path={`${config.baseUrl}adamantfinance`} element={<Adamantfinance />} />
+          <Route path={`${config.baseUrl}salemfinance`} element={<Salemfinance />} />
+          <Route path={`${config.baseUrl}activeaddress`} element={<Activeaddress />} />
+          <Route path={`${config.baseUrl}addresschart`} element={<Addresschart />} />
+          <Route path={`${config.baseUrl}blockchart`} element={<Blockchart />} />
+          <Route path={`${config.baseUrl}miner`} element={<Miner />} />
           
         </Routes>
   </div>

@@ -1,4 +1,4 @@
-import React, { Component,useEffect } from 'react';
+import React, { Component, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import config from '../coreFiles/config';
 import Header from '../directives/header';
@@ -9,7 +9,7 @@ const Busy = () => {
 
     useEffect(() => {
 
-      
+
 
     }, []);
 
@@ -18,10 +18,7 @@ const Busy = () => {
         <>
 
 
-
-
-
-<p className='p-2'>Server  Busy....</p>
+            <p className='p-2'>Server  Busy....</p>
 
 
 
